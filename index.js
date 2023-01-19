@@ -1,20 +1,20 @@
 // "use strict";
 
-// !!!!arrow 
+// !!!!arrow
 
-const site = {
-    title: "my site",
-    headers: ["Header1", "About", "Contact"],
-    showHeader: function () {
-        this.headers.forEach((header) => {
-            console.log(this);
-            // console.log(header)
-            console.log(this.title, "|", header);
-        });
-    },
-};
+// const site = {
+//     title: "my site",
+//     headers: ["Header1", "About", "Contact"],
+//     showHeader: function () {
+//         this.headers.forEach((header) => {
+//             console.log(this);
+//             // console.log(header)
+//             console.log(this.title, "|", header);
+//         });
+//     },
+// };
 
-site.showHeader();
+// site.showHeader();
 
 // !!!!"костиль" this in variable
 
@@ -51,17 +51,22 @@ site.showHeader();
 //   console.log(this.title, "|", header);
 // }
 
-
-
 // bind and use strict
 
 // "use strict";
+// const obj = {
+//     title: "123",
+// };
+
 // const site = {
 //     title: "my site",
 //     headers: ["Header1", "About", "Contact", "Second title"],
+//     // showHeader: function () {
+//     //     this.headers.forEach(logHeader.bind(this));
+//     // },
 //     showHeader: function () {
-//         this.headers.forEach(logHeader.bind(this));
-//     },
+//       this.headers.forEach(logHeader.bind(obj));
+//   },
 // };
 
 // function logHeader(header) {
