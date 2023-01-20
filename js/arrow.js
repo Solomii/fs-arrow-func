@@ -48,17 +48,18 @@ console.log(getSum(1, 2, 3));
 console.log(getSum2());
 console.log(getSum2(1, 2, 3));
 
-const getAverageArgs = (...args) => //rest
+const getAverageArgs = (
+    ...args //rest
+) =>
     args.length === 0
         ? null
         : args.reduce((acc, arg) => acc + arg) / args.length;
 
 console.log(getAverageArgs(1, 2, 3));
 
-const numbers = [1,2,3,4,5,6,7,8]
-console.log(getSum(...numbers))  //spred
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(getSum(...numbers)); //spred
 
-const arr = [8,8,8];
-const resultArray = [77,...numbers,88, ...numbers] //spred                               
-
-// написати функцію
+const arr = [8, 8, 8];
+const resultArray = [77, ...numbers, 88, ...numbers]; //spred
+ 
